@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets\style.css">
+    <title>Document</title>
+</head>
+
+<body class="row">
+
+    <!--Landing Page-->
+    <div id="landingpage" class="row-sm-9">
+        </br>
+        </br>
+        <h1 id="h1landing">Welcome to the Bootcamp Quiz</h1>
+        <p id="planding">You will now take a quiz! If you get an answer wrong, you will have 20 seconds deducted from
+            your time.
+            Good luck!
+        </p>
+        <button id="btnlanding"> Let's Go! </button>
+    </div>
+    <!--Quiz Section-->
+    <div class="row">
+        <div class="col-8 col-sm-12">
+            <div id="questionsanswers">
+                <h2 id='timerClock'></h2>
+                <h2 id='questionName'></h2>
+                </br>
+                <ul id='selectionAnswers'></ul>
+                <p id='rightorwrong'></p>
+            </div>
+            <!--Results Section-->
+            <div id="hide">
+                <div id="show">
+                    <div id="onlyhighscores>">
+                        <h2 id="score"></h2>
+                        </br>
+                        <input id='nameinput' type="text" placeholder="Enter Name"></input>
+                        <button id='button'> Save</button>
+                        <button id='button1'>View High Scores</button>
+                    </div>
+                </div>
+                <div id="highscoresonly">
+                    </br>
+                    <h2 id='currentscores'>Current Scores</h2>
+                    <legend id="output"></legend>
+                    <button id="home" onclick="returnHome()">Try Again!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets\script.js">
+    </script>
+</body>
+
+</html>
